@@ -1,0 +1,42 @@
+*{
+	background-color: rgb(21.2%, 27.1%, 31%);
+	font-family: 'Acme', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-image: url(./images/background.jpg);
+	background-repeat: repeat-x;
+}
+
+
+/*NavBar*/
+
+/*li a{
+	text-decoration: none;
+	color: whitesmoke;
+
+}
+
+nav ul{
+	list-style-type: none;
+	overflow: auto;
+	background-color: #212b31;;
+	
+}
+
+li{
+	padding: .5rem;
+}
+
+a {
+	display: inline-block;
+	margin: 2px;
+	background-color: #212b31;
+}
+
+nav	{
+	float: right;
+}
+
+
+*/
+
