@@ -64,11 +64,11 @@
 			</div>
 			<div class="para1">
 				<h1>Hi!</h1>
-				<p>My name is <strong>Magic Gapud.</strong>I have always been passionate about web development. Originally, I was working as an Accountant, but due to personal preferences and interests, I have decided to shift to web development. Luckily for me, I have managed to spend a fair share of time to understand the industry</p>
+				<p>My name is <strong>Magic Gapud.</strong>I have always been passionate about web development. Originally, I was working as an Accountant, but due to personal preferences and interests, I have decided to shift to web development.</p>
 			</div>
 		</div>
 		<div class="tools">
-			<h2>Tools</h2>
+			<h2 class="toolsheader">Skills</h2>
 			<img class="toolsimage" src="./images/logo-html5.png">
 			<img class="toolsimage" src="./images/logo-javascript.png">
 			<img class="toolsimage" src="./images/logo-css3.png">
@@ -87,26 +87,43 @@
 	<section id="contactpage">
 		<div>
 			<h1 class="Header">Contact</h1>
-			<form>
-				<div class="form-group">
-					<div class="box1">	
-						<div class="minibox1">
+			<form class="form-group">	
+					<div class="input_area">
 							<label for="fname" >First Name:</label>
-							<input type="text" name="firstname" id="fname" placeholder="First Name">
-						</div>
-						<div class="minibox2">
-							<label for="lname">Last Name:</label>
-							<input type="tex" name="lastname" placeholder="Last Name">
-						</div>
+							<input type="text" name="firstname" id="fname" class="input" required>
 					</div>
-					<div class="box2">
+					<div class="input_area">
+							<label for="lname">Last Name:</label>
+							<input type="tex" name="lastname" class="input" required>
+					</div>
+
+					<div class="input_area">
 						<label for="message">Message:</label>
-						<textarea name="message" id="message" placeholder="Enter your message"></textarea>
-				</div>
-				</div>
+						<textarea name="message" id="message" placeholder="Enter your message" class="input" required></textarea>
+					</div>
+					<div>
+						<button type="submit">submit</button>
+					</div>
 			</form>
 		</div>
 	</section>
+
+	<section id="pre-footer">
+		<div>
+			<h3>Contact Us</h3>
+			<p>09154039242 (Globe), 09210554007 (Smart)</p>
+			<p>magicgapud214@gmail.com</p>
+		</div>
+	</section>
+
+	<!-- footer -->
+	<footer>
+		<span>Portfolio</span>
+		<span>|</span>
+		<span>&copy; Magic Gapud</span>
+		<span>|</span>
+		<span>All Rights Reserved</span>
+	</footer>
 
 
 
