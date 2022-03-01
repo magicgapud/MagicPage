@@ -1,42 +1,233 @@
+
 *{
-	background-color: rgb(21.2%, 27.1%, 31%);
-	font-family: 'Acme', sans-serif;
 	margin: 0;
 	padding: 0;
-	background-image: url(./images/background.jpg);
-	background-repeat: repeat-x;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
 }
+
+html{
+	font-family: 'Syne Mono', monospace;
+	background: black;
+	scroll-behavior: smooth;
+}
+
 
 
 /*NavBar*/
+nav	{
+	background: black;
+	height: 80px;
+	width: 100%;
+}
 
-/*li a{
-	text-decoration: none;
-	color: whitesmoke;
-
+.logo{
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
 }
 
 nav ul{
-	list-style-type: none;
-	overflow: auto;
-	background-color: #212b31;;
-	
-}
-
-li{
-	padding: .5rem;
-}
-
-a {
-	display: inline-block;
-	margin: 2px;
-	background-color: #212b31;
-}
-
-nav	{
 	float: right;
+	margin-right: 20px;
+}
+
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin-right: 0 5px;
+
+}
+
+nav ul li a{
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	text-transform: uppercase;
+
+}
+
+a:hover{
+	background: dimgrey;
+	transition: .5s;
+}
+
+.checkbtn{
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+}
+
+#check{
+	display: none;
+}
+
+@media (max-width: 952px){
+	label.logo{
+		font-size: 30px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 858px){
+	.checkbtn{
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: black;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block;
+	}
+	nav ul li a{
+		font-size: 20px;
+	}
+	a:hover{
+		background: none;
+		color: dimgrey;
+	}
+	#check:checked~ul{
+		left: 0;
+	}
+}
+
+label img{
+	width: auto;
+	max-height: 10vh;
+	margin-left: -80px;
+	border-radius: 150%;
 }
 
 
-*/
 
+
+/*landing Page*/
+
+#landingpage{
+	display: flex;
+	background-image: url(./images/Background.png);
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+}
+
+.headText{
+	font-size: 20px;
+	margin: 10px;
+	letter-spacing: 5px;
+	font-size: 30px
+
+}
+
+.containerLanding{
+	margin: auto;
+	color: white;
+	background: rgba(255, 255, 255, .1);
+	padding: 2rem;
+}
+
+.redName{
+	font-weight: bolder;
+	font-size: 40px;
+	text-shadow: 4px 4px red;
+}
+
+i {
+	font-size: 30px;
+	color: white;
+	margin: ;
+}
+
+.fab{
+
+}
+
+
+/*About me*/
+
+#aboutmepage{
+	height: 100vh;
+	color: white;
+	background-image: url(./images/aboutme.jpg);
+	background-size: cover;
+}
+
+.aboutmeFlex{
+	display: flex;
+	margin: 2rem;
+	flex-direction: row;
+}
+
+.Header {
+	font-size: 30px;
+	text-align: center;
+	margin: 5rem;
+	text-shadow: 4px 4px red;
+	color: white;
+}
+
+.Me{
+	max-width: 100%;
+	height: auto;
+	border-radius: 100%;
+}
+
+.para1{
+	font-size: 2vw;
+	margin-top: 5vw;
+	padding: 0 10vw;
+}
+
+.tools{
+	text-align: center;
+}
+
+.toolsimage{
+	width: 10%;
+	height: auto;
+}
+
+
+/*Gallery*/
+
+#gallerypage{
+	height: 100vh;
+	background-image: url(./images/Gallery.jpg);
+	background-size: cover;
+}
+
+.galleryflex{
+	background: rgba(255, 255, 255, .1);
+	display: flex;
+	margin: auto;
+	height: 80vh;
+	width: 80vw;
+}
+
+/*Contact*/
+
+#contactpage{
+	background-image: url(./images/contact.jpg);
+	height: 100vh;
+	background-size: cover;
+	color: white;
+}
+
+input{
+	width: 30%;
+}
