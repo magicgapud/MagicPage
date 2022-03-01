@@ -204,6 +204,10 @@ i {
 
 }
 
+.fname{
+	border-bottom: 1px solid grey;
+}
+
 .para1{
 	font-size: 2vw;
 	margin-top: 5vw;
