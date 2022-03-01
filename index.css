@@ -228,6 +228,51 @@ i {
 	color: white;
 }
 
-input{
-	width: 30%;
+.form-group{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	background: rgba(255, 255, 255, .1);
+	width: 60vw;
+	margin: auto;
+	padding: 2% 5%;
+
 }
+
+.box1{
+	flex: 1;
+	margin: 2rem;
+	display: flex;
+	flex-flow: row;
+}
+
+.minibox1{
+	flex: 1;
+	margin: 0 1rem;
+}
+
+.minibox2{
+	flex: 1;
+	margin: 0 1rem;
+}
+
+@media (max-width: 768px){
+	.box1{
+	flex: 1;
+	margin: 2rem;
+	display: flex;
+	flex-flow: column;
+	}
+}
+
+.box2{
+	flex: 1;
+	margin: 2rem;
+}
+
+#message{
+	width: 100%;
+}
+
+
+
