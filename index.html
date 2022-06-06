@@ -17,62 +17,146 @@
 	<script src="https://kit.fontawesome.com/f41ee52d8b.js" crossorigin="anonymous"></script>
 
 	<!-- bootstrap CSS -->
-	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
- -->
-	<!-- bootstrap JS Dependencies -->
-	<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script> -->
-</head>
-<body>
-	<!-- NavBar -->
-	<nav>
-		<input type="checkbox" id="check">
-		<label for="check" class="checkbtn">
-			<i class="fa-solid fa-bars"></i>
-		</label>
-		<label class="logo"><img src="./images/logo.jpg"></label>
-		<ul>
-			<li><a href="#landingpage">Home</a></li>
-			<li><a href="#aboutmepage">About me</a></li>
-			<li><a href="#gallerypage">Gallery</a></li>
-			<li><a href="#contactpage">Contact</a></li>
-		</ul>
-	</nav>
-	
-	<!-- end of NavBar -->		
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
-	<!-- Contents -->
+	<!-- bootstrap JS Dependencies -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</head>
+<body>		
+
 
 	<!-- landing page -->
 	<section id="landingpage">
-		<div class="containerLanding">
-			<div class="headText">Hi!</div>
-			<div class="headText">My name is <span class="redName">Magic Gapud</span></div>
-			<div class="headText">I am a web developer</div>
-			<div class="fab">
-				<a href="https://www.facebook.com/magicgapud/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-				<a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-			</div>		
+
+			<nav class="navbar navbar-expand-lg navbar-light container">
+			  <a class="navbar-brand text-light" href="#"><span class="text-danger shadow">M</span> V G</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+			    <ul class="navbar-nav ml-auto">
+			      <li>
+			        <a class="nav-link text-light" href="#">Home</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link text-light" href="#">Gallery</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link text-light" href="#">Skills</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link text-light" href="#">Contact</a>
+			      </li>
+			    </ul>
+			  </div>
+			</nav>
+			<div>
+				<div>
+					<img src="./images/pic2.jpg" alt="me" id="img-me" class="img-fluid p-1 shadow">
+				</div>
+				<div>
+					<h3 class="text-center text-light my-4 text-light">Magic V. Gapud</h3>
+					<p class="text-center text-light">JavaScript full-stack developer | Certified Public Accountant</p>
+					<div class="text-center mb-2">
+						<a href="https://www.facebook.com/magicgapud">
+							<i class="fa-brands fa-facebook fa-2xl text-info mx-2"></i>
+						</a>
+						<a href="https://www.linkedin.com/in/magic-gapud-671980166/">
+							<i class="fa-brands fa-linkedin fa-2xl text-info mx-2"></i>	
+						</a>
+						<a href="https://github.com/magicgapud">
+							<i class="fa-brands fa-github fa-2xl text-info mx-2"></i>
+						</a>
+					</div>
+					<hr>
+				</div>
+				<div class="text-center m-3">
+					<a href="#aboutmepage">
+						<button class="btn mr-3 m-1 bg-primary shadow">About me</button>	
+					</a>
+					<a href="/images/ShinyPapers.pdf" download="shinypapers">
+						<button class="btn m-1 bg-primary shadow">Download CV</button>
+					</a>
+					
+				</div>				
+			</div>
+	</section>
+
+<!-- personal details -->
+	<section id="personal-details" class="row d-flex">
+		<div class="pd-item1 col-sm-4 m-2 my-3 py-3 shadow row">
+			<div class="col-12">
+				<strong>Personal Details:</strong>	
+			</div>
+			<div class="col-12 small py-2">
+				<i class="fa-solid fa-house"></i>  Manggahan, Pasig City
+			</div>
+			<div class="col-12 small py-2">
+				<i class="fa-solid fa-envelope"></i>  magicgapud214@gmail.com
+			</div>
+			<div class="col-12 small py-2">
+				<i class="fa-solid fa-phone"></i>  (+63)9154039242
+			</div>
+			
+
+		</div>
+		<div class="pd-item2 col-sm-7 m-2 row mx-auto">
+				<blockquote class="my-auto">
+					<p>
+						<em>
+						"The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle."
+					</em>
+					</p>
+					<footer class="blockquote-footer">Steve Jobs</footer>
+				</blockquote>
 		</div>
 	</section>
 
 	<!-- About me -->
-	<section id="aboutmepage">
-		<h1 class="Header">About me</h1>
-		<div class="aboutmeFlex">
-			<div>
-				<img src="./images/me2.jpg" class="Me">
-			</div>
-			<div class="para1">
-				<h1 class="fname">Magic Gapud</h1>
-				<p>I am an aspiring full-stack software engineer from Pasig City. I have always been passionate about web development. Web development, like no other job, gives you the opportunity to digitize your ideas.</p>
-			</div>
+	<section id="aboutmepage" class="d-flex justify-content-center">
+			<div class="row container d-flex flex-wrap justify-contents-center">
+				<div class="col-lg-4 my-auto text-center"><img src="./images/pic3.png" id="img-me2" class="img-fluid"></div>
+				<div class="col-lg-8 d-inline-flex flex-wrap p-4 justify-contents-center">
+					<div class="shadow p-3 my-3 mr-lg-4 aboutme-item1">
+						<h5>Before Software Development</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero voluptatum quam adipisci repudiandae nesciunt quos perferendis voluptas maxime reiciendis, fugiat provident unde qui est vel mollitia dignissimos eum voluptatibus?</p>
+					</div>
+					<div class="shadow p-3 my-3 ml-lg-4 aboutme-item2">
+						<h5>Software Development</h5>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel pariatur, officiis, aliquid eos repellat eaque reiciendis dicta deserunt earum, dolore rem dolor aliquam, eius repudiandae dolores cupiditate omnis magni id.</p>
+					</div>
+					<div class="shadow p-3 my-3 aboutme-item3 mr-lg-4">
+						<h5>Future</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, doloribus ratione sint officiis sit pariatur rem magnam sapiente atque nemo, et, error dignissimos. Dolor debitis ad voluptatem, commodi minus, eos?</p>
+					</div>
+				</div>		
+			</div>	
+	</section>
+
+
+	<!-- Education -->
+	<section class="text-center work-experience">
+		<div class="container shadow py-4 bg-white work-heading">
+			<h5>Work Experiences</h5>
 		</div>
-		<div class="tools">
-			<h2 class="toolsheader">Skills</h2>
-			<img class="toolsimage" src="./images/logo-html5.png">
-			<img class="toolsimage" src="./images/logo-javascript.png">
-			<img class="toolsimage" src="./images/logo-css3.png">
+		<div class="row m-5 px-md-5 mx-auto container">
+			<div class="col-12 text-left bg-white shadow p-3 m-3 work-item">
+				<h6>Internal Audit Specialist</h6>
+				<p>Ecossential Foods Corporation(Kopiko), Pasig City, Metro Manila</p>
+			</div>
+			<div class="col-12 text-left bg-white shadow p-3 m-3 work-item">
+				<h6>Finance-Accounting Officer</h6>
+				<p>Streetcorner Lending Corporation, Pasig City, Metro Manila</p>
+			</div>
+			<div class="col-12 text-left bg-white shadow p-3 m-3 work-item">
+				<h6>Sr. Audit Associate/ Jr. Audit Associate</h6>
+				<p>P. F. Tatunay & Co. CPAs, Quezon City, Metro Manila</p>
+			</div>
+			<div class="col-12 text-left bg-white shadow p-3 m-3 work-item">
+				<h6>Accounting Assistant-Financial Reporting</h6>
+				<p>Unistar Credit and Finance Corporation, Pasig City, Metro Manila</p>
+			</div>
 		</div>
 	</section>
 

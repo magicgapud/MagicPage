@@ -7,331 +7,112 @@
 	box-sizing: border-box;
 }
 
-html{
-	font-family: 'BhuTuka Expanded One', cursive;
-	background: black;
+body {
+
 	scroll-behavior: smooth;
 }
 
 
-
-/*NavBar*/
-nav	{
-	background: black;
-	height: 80px;
-	width: 100%;
-	position: fixed;
+section {
+	height: 100vh;
+	background-color: #EEEEEE;
 }
-
-.logo{
-	color: white;
-	font-size: 35px;
-	line-height: 80px;
-	padding: 0 100px;
-	font-weight: bold;
-}
-
-nav ul{
-	float: right;
-	margin-right: 20px;
-}
-
-nav ul li{
-	display: inline-block;
-	line-height: 80px;
-	margin-right: 0 5px;
-
-}
-
-nav ul li a{
-	color: white;
-	font-size: 17px;
-	padding: 7px 13px;
-	text-transform: uppercase;
-
-}
-
-a:hover{
-	background: dimgrey;
-	transition: .5s;
-}
-
-.checkbtn{
-	font-size: 30px;
-	color: white;
-	float: right;
-	line-height: 80px;
-	margin-right: 40px;
-	cursor: pointer;
-}
-
-#check{
-	display: none;
-}
-
-@media (max-width: 952px){
-	label.logo{
-		font-size: 30px;
-	}
-	nav ul li a{
-		font-size: 16px;
-	}
-}
-
-@media (max-width: 858px){
-	.checkbtn{
-		display: block;
-	}
-	ul{
-		position: fixed;
-		width: 100%;
-		height: 100vh;
-		background: black;
-		top: 80px;
-		left: -100%;
-		text-align: center;
-		transition: all .5s;
-	}
-	nav ul li{
-		display: block;
-	}
-	nav ul li a{
-		font-size: 20px;
-	}
-	a:hover{
-		background: none;
-		color: dimgrey;
-	}
-	#check:checked~ul{
-		left: 0;
-	}
-}
-
-label img{
-	width: auto;
-	max-height: 10vh;
-	margin-left: -80px;
-	border-radius: 150%;
-}
-
-
 
 
 /*landing Page*/
 
-#landingpage{
-	display: flex;
-	background-image: url(./images/Background.png);
-	background-size: cover;
-	height: 100vh;
-	width: 100%;
+#landingpage {
+
+	background-color: #1C658C;
 }
 
-.headText{
-	font-size: 20px;
-	margin: 10px;
-	letter-spacing: 5px;
-	font-size: 30px
+
+hr {
+	width: 80vw;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#img-me {
+	border-radius: 50%;
+	border: 10px solid white;
+	width: 20em;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
 
 }
 
-.containerLanding{
-	margin: auto;
-	color: white;
-	background: rgba(255, 255, 255, .1);
-	padding: 2rem;
+
+#personal-details {
+	height: auto;
+	width: 90vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -8vh;
+	background-color: #D8D2CB;
+	border-radius: 5px;
+	z-index: auto;
+	position: relative;
+	box-sizing: border-box;
+
 }
 
-.redName{
-	font-weight: bolder;
-	font-size: 40px;
-	text-shadow: 4px 4px red;
+.pd-item1 {
+	border-radius: 5px;
+	position: relative;
+	background-color: #EEEEEE;
+
 }
 
-i {
-	font-size: 30px;
-	color: white;
-	margin: ;
-}
 
-.fab{
-
+.pd-item2{
+	border-radius: 5px;
+	position: relative;
 }
 
 
 /*About me*/
 
-#aboutmepage{
-	color: white;
-	background-image: url(./images/aboutme.jpg);
-	background-size: cover;
-	padding: 10vh 5vw;
-}
 
-.aboutmeFlex{
-	display: flex;
-	margin: 2rem;
-	flex-direction: row;
-}
-
-.Header {
-	font-size: 3rem;
-	text-align: center;
-	text-shadow: 4px 4px red;
-	color: white;
-}
-
-.Me{
-	max-width: 250px;
-	width: 100vw;
-	height: auto;
-	border-radius: 10%;
-}
-
-@media screen and (max-width: 768px){
-	.aboutmeFlex{
-		display: flex;
-		margin: 2rem;
-		flex-direction: column;
-		text-align: center;
-	}
-	.Me{
-		max-width: 150px;
-		width: 100vw;
-		height: auto;
-		border-radius: 10%;
-	}
-
-}
-
-.fname{
-	border-bottom: 1px solid grey;
-}
-
-.para1{
-	font-size: 2vw;
-	margin-top: 5vw;
-	padding: 0 10vw;
-}
-
-.tools{
-	text-align: center;
-}
-
-.toolsheader{
-	font-size: 2rem;
-}
-
-.toolsimage{
-	width: 10vw;
+#aboutmepage {
+	background-color: #EEEEEE;
+	margin-top: -16vh;
+	padding-top: 20vh;
+	padding-bottom: 10vh;
 	height: auto;
 }
 
 
-/*Gallery*/
 
-#gallerypage{
-	height: 100vh;
-	background-image: url(./images/Gallery.jpg);
-	background-size: cover;
-	padding: 10vh 5vw;
+#img-me2 {
+width: 15em;
 }
 
-.galleryflex{
-	background: rgba(255, 255, 255, .1);
-	display: flex;
-	margin: auto;
-	height: 80vh;
-	width: 70vw;
+.aboutme-item1 {
+	border-radius: 0 50% 10px 0;
+	background-color: white;
 }
 
-/*Contact*/
-
-#contactpage{
-	background-image: url(./images/contact.jpg);
-	background-size: cover;
-	color: white;
-	padding: 10vh 5vw;
+.aboutme-item2 {
+	border-radius: 0 50px 50px 0;
+	background-color: white;
 }
 
-.form-group{
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-	background: rgba(29, 18, 24, .5);
-	width: 70vw;
-	max-width: 500px;
-	margin: 2rem auto;
-	padding: 2% 5%;
-	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
-
+.aboutme-item3 {
+	border-radius: 0 10px 50% 0;
+	background-color: white;
 }
 
-.box1{
-	flex: 1;
-	margin: 2rem;
-	display: flex;
-	flex-flow: row;
+.work-item {
+	border-radius: 10px;
 }
 
-.input_area{
-	display: flex;
-	margin: 15px;
-	align-items: center;
+.work-heading {
+	border-radius: 30px;
 }
 
-.input_area label{
-	width: 200px;
-	margin-right: 10px;
-	font-size: 14px;
+.work-experience {
+	height: auto;
+	padding: 5vh;
 }
-
-.input_area .input{
-	width: 100%;
-	outline: none;
-}
-
-.box2{
-	flex: 1;
-	margin: 2rem;
-}
-
-#message{
-	width: 100%;
-	border: 1px solid #d5dbd9;
-}
-
-button{
-	color: white;
-	font-weight: bold;
-	background-color: #C2395B;
-	padding: 1rem;
-	font-size: 1rem;
-	border-radius: 25px;
-}
-
-/*pre-footer*/
-#pre-footer>div{
-	display: inline-block;
-	vertical-align: top;
-	color: white;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	margin-right: 5%;
-	margin-left: 25px;
-	line-height: 2;
-}
-
-/*Footer*/
-
-footer{
-	padding: 1rem;
-	color: white;
-	background-color: darkgrey;
-	font-size: 2vw;
-}
-
-footer>span{
-	margin: 0px 10px;
-}
-
