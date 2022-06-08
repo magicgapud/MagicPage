@@ -135,6 +135,15 @@ width: 15em;
 
 
 
+/*Gallery*/
+
+.photo {
+	width: 50%;
+	max-width: 30em;
+}
+
+
+
 /*Contact page*/
 #contactpage {
 	height: auto;
@@ -143,7 +152,7 @@ width: 15em;
 
 
 /*Footer*/
-footer {
+.final-footer {
 	background-color: #1C658C;
 }
 
